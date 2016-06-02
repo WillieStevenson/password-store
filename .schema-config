@@ -1,0 +1,22 @@
+#!/bin/bash
+####
+## 
+## SQL Lite schema goes here
+##
+###
+
+SQL_VER='sqlite3'
+
+SQL_DB='password_store_db'
+SQL_TABLE='password_store_t'
+
+## One may add other attributes if needed - script should be changed accordingly
+SCHEMA="CREATE TABLE $SQL_TABLE (
+
+	id INTEGER PRIMARY KEY,
+	service_name TEXT,
+	service_password TEXT,
+	date_created TEXT,
+	last_accessed TEXT
+
+);"
